@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oficina Virtual · AIT</title>
+  <link rel="stylesheet" href="motor/oficina.css">
+  <style>
+    .hero{padding-block:32px 8px}
+    .hero h1{font-family:var(--pix);font-weight:400;font-size:26px;letter-spacing:.06em;margin:0 0 6px}
+    .hero p{color:var(--muted);margin:0;max-width:60ch}
+    .areas{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:22px}
+    .area{display:block;text-decoration:none;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .area:hover{border-color:var(--accent)}
+    .area b{display:block;font-size:16px}
+    .area span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+    .area .pix{color:var(--accent);font-size:11px;margin-top:10px}
+    .area.off{opacity:.55;pointer-events:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Oficina Virtual</h1>
+      <p>Las oficinas de agentes de cada área de AIT, con el mismo estilo. Elegí un área para verla.</p>
+    </header>
+    <nav class="areas" aria-label="Áreas">
+      <!-- Para sumar tu área, agregá un bloque como este -->
+      <a class="area" href="areas/clientes/index.html"><b>Clientes</b><span>Equipo de Clientes · versión de referencia</span><span class="pix">ABRIR →</span></a>
+      <a class="area" href="areas/_plantilla/index.html"><b>Plantilla</b><span>Base para crear un área nueva</span><span class="pix">ABRIR →</span></a>
+      <a class="area off" href="#" aria-disabled="true"><b>Adquisición</b><span>Próximamente</span><span class="pix">EN ARMADO</span></a>
+      <a class="area off" href="#" aria-disabled="true"><b>AI Team</b><span>Próximamente</span><span class="pix">EN ARMADO</span></a>
+    </nav>
+    <p class="foot">Maqueta gráfica · datos de ejemplo · ver README.md y ESTILO.md</p>
+  </div>
+</body>
+</html>
